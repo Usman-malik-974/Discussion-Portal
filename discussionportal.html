@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion Portal</title>
+    <link rel="stylesheet" href="discussionportal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header id="header">Discussion portal</header>
+    <div id="outerdiv">
+        <div id="questionlist">
+            <fieldset style="display: flex; justify-content: space-between;">
+                <button id="newquestion" value="New question" style="padding:10px;">New question</button>
+                <input id="searchbar" type="text" placeholder="search here">
+            </fieldset>
+            <div id="list">
+            </div>
+        </div>
+        <div id="questionform">
+           <h2>Welcome to discussion portal!</h2>
+           <p style="font-weight: 500; font-size: large;">Enter a subject and question to get started</p>
+           <input id="subject" type="text" placeholder="Subject" required>
+           <textarea rows="10" cols="60" id="question" placeholder="Question" required></textarea>
+           <button id="submit" value="submit">Submit</button>
+        </div>
+        <div id="responseform">
+             <h2 style="text-decoration:underline;">Question:</h2>
+             <div style="background-color: #E5E4E2;">
+                 <h3 id="showsubinres"></h3>
+                 <p id="showquesinres"></p>
+                 <p id="questionid" style="display: none;"></p>
+            </div>
+            <button id="resolve" class="buttonstyle" value="resolve">Resolve</button>
+             <h2 style="text-decoration:underline;">Responses:</h2>
+             <div id="responses"></div> 
+              <h1 style="text-decoration:underline;">Add response</h1>
+             <input id="name" type="text" placeholder="Enter name" required>
+             <textarea rows="10" cols="60" id="comment" placeholder="Comment" required></textarea>
+             <button id="addresponse" class="buttonstyle" value="submit">Add response</button> 
+             <div id="addresbtn"> 
+
+             </div>
+        </div>
+    </div>
+</body>
+<script src="portalscript2.js"></script>
+</html>
